@@ -1,9 +1,9 @@
 {
   "name": "@amazing-kit/docker",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Run docker commands in node.js (not all commands are supported yet)",
   "main": "dist/index.js",
-  "module": "dist/index.mjs.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "vitest run",

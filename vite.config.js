@@ -11,7 +11,7 @@ export default defineConfig(() => {
 
       lib: {
         entry: resolve(__dirname, 'src/index.ts'),
-        formats: ['es', 'cjs'], // without this, the build will be for esm and cjs
+        formats: ['es']
       }
     },
   };
