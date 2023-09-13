@@ -1,12 +1,16 @@
 {
   "name": "@amazing-kit/docker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
+  "module": "dist/index.mjs.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "build": "vite build",
+    "build": "run-p build:source build:types",
+    "build:source": "vite build",
+    "build:types": "tsc --emitDeclarationOnly",
     "build:watch": "vite build --watch",
     "clean": "rimraf dist .turbo node_modules",
     "prepublishOnly": "zx bin/prepublish.mjs"
