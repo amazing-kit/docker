@@ -1,17 +1,31 @@
-# docker
+# @amazing-kit/docker
 
 Run docker commands from nodejs
 - run
 - stop
 - ps
 
+## Install
+
+```sh
+pnpm add @amazing-kit/docker
+```
+
 ```ts
 // ESModule only
 import docker from "@amazing-kit/docker"
+```
 
+## Get docker containers
+
+```ts
 const all_containers = await docker.ps({ all: true })
 // get container data in JSON format
+```
 
+## Run a new docker container
+
+```ts
 await docker.run("image_name", {
   // all options are optional
   name: "container_name",
@@ -27,6 +41,10 @@ await docker.run("image_name", {
   auto_remove: true, // default false
   daemon: true,      // default false
 })
+```
 
+## Stop a docker container
+
+```ts
 await docker.stop("container_name", { forceKillAfter: 1000 })
 ```
