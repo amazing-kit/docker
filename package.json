@@ -8,7 +8,8 @@
     "test:watch": "vitest watch",
     "build": "vite build",
     "build:watch": "vite build --watch",
-    "clean": "rimraf dist .turbo node_modules"
+    "clean": "rimraf dist .turbo node_modules",
+    "prepublishOnly": "zx bin/prepublish.mjs"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +24,11 @@
   },
   "dependencies": {
     "zx": "^7.2.3"
+  },
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
