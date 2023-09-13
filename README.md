@@ -48,3 +48,9 @@ await docker.run("image_name", {
 ```ts
 await docker.stop("container_name", { forceKillAfter: 1000 })
 ```
+
+## Alternatives
+
+- [dockerode](https://github.com/apocas/dockerode)
+- [docker-js](https://github.com/giper45/docker-js)
+- [zx](https://github.com/google/zx) -> not docker specific (execu docker CLI in JS)

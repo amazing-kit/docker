@@ -1,6 +1,6 @@
 {
   "name": "@amazing-kit/docker",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Run docker commands in node.js (not all commands are supported yet)",
   "repository": "amazing-kit/docker",
   "keywords": ["docker"],
